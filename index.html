@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio to Video Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Audio to Video Converter</h1>
+    <input type="file" id="audioInput" accept="audio/*">
+    <label>Background Color: </label>
+    <input type="color" id="bgColor" value="#000000">
+    <button onclick="convertToVideo()">Convert to Video</button>
+    <video id="outputVideo" controls></video>
+    <a id="downloadBtn" style="display: none;">Download Video</a>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.11.6"></script>
+</body>
+</html>
