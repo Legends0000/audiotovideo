@@ -1,5 +1,6 @@
 const { createFFmpeg, fetchFile } = FFmpeg;
-const ffmpeg = createFFmpeg({ log: true });
+const ffmpeg = createFFmpeg({ corePath: 'https://unpkg.com/@ffmpeg/core@latest/dist/ffmpeg-core.js' });
+
 
 async function convertToVideo() {
     if (!ffmpeg.isLoaded()) {
